@@ -1,0 +1,1051 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fuentes/icomoon.eot?-3f75qm');
+	src:url('../fuentes/icomoon.eot?#iefix-3f75qm') format('embedded-opentype'),
+		url('../fuentes/icomoon.woff?-3f75qm') format('woff'),
+		url('../fuentes/icomoon.ttf?-3f75qm') format('truetype'),
+		url('../fuentes/icomoon.svg?-3f75qm#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telefono:before {
+	content: "\e600";
+}
+.icon-correo:before {
+	content: "\e601";
+}
+.icon-web:before {
+	content: "\e602";
+}
+.icon-googleplus:before {
+	content: "\e603";
+}
+.icon-twitter:before {
+	content: "\e604";
+}
+
+@font-face {
+    font-family:si;
+    src:    url(../fuentes/socicon.eot?#iefix) 
+                format(embedded-opentype),
+            url(../fuentes/socicon.woff) format(woff),
+            url(../fuentes/socicon.ttf) format(truetype),
+            url(../fuentes/socicon.svg) format(svg);
+    font-weight:400;
+    font-style:normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../fuentes/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    margin:0; padding:5.9em;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 44px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: none;
+}
+
+
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'a';
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-google:before {
+    content:'c';
+}
+
+.soc-twitter:hover {
+    background-color: #61bbf2;
+}
+.soc-google:hover {
+    background-color: #ed5241;
+}
+
+
+
+
+a {
+	font-size: 18px;
+	color: white;
+	text-shadow: 1px 1px 2px #C94A1C;
+	text-decoration: none;
+}
+
+body {
+    background: #2A333B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+/*header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/unsplash_525f012329589_1.JPG) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}*/
+h1{
+	color: white;
+	opacity: 1.0;
+	border: solid 1px;
+	position: relative;
+	width: 50%;
+	margin-top: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	background: aqua;
+	text-align: center;
+	padding: 1em 1em 1em 1em;
+	opacity: 0.5;
+
+	text-shadow: 2px 4px 3px #999999;
+	-moz-box-shadow: 0px 0px 26px #999999;
+    -webkit-box-shadow: 0px 0px 26px #999999;
+    box-shadow: 0px 0px 26px #999999;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+	}
+header h1:hover {
+	opacity: 1.1;
+	font-family: 'Roboto', sans-serif;
+
+	transition:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in; -moz-transition:all 0.5s ease-in;
+	-ms-transition:all 0.5s ease-in; -o-transition:all 0.5s ease-in;
+}
+/*efecto de arrow*/
+.arrow_box {
+	position: relative;
+	background: #00FFFF;
+	border: 4px solid #00FFFF;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(0, 255, 255, 0);
+	border-top-color: #00FFFF;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(0, 255, 255, 0);
+	border-top-color: #00FFFF;
+	border-width: 36px;
+	margin-left: -36px;
+}
+
+/*nav {
+	overflow: hidden;
+	border: solid 1px;
+	width: 100%;
+	background: #272822;
+	z-index: 1;
+	/*position: fixed;
+}
+nav ul {
+	text-align: center;
+	margin-top: 0px;
+    position: relative;
+    display: block;
+}
+ul li {
+	padding: 1em 1em 1em 1em;
+	display: inline-block;
+}*/
+
+#acerca {
+	background: #21A0A0;
+	opacity: 0.8;
+	color: #ffffff;
+	overflow: hidden;
+	height: auto;
+	position: relative;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+figure img {
+	float: right;
+	border: 1px solid gray;
+	margin: 0;
+	padding: 0;
+	border-radius: 900px;
+	overflow: hidden;
+}
+.contenidos {
+	width: 70%;
+	float: left;
+	padding: 1em;
+}
+span {
+	width: 100%;
+}
+#conocimientos {
+	background: #FFFFD8;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+
+}
+
+/*barras de progreso circulares*/
+#circular {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-right:22px;
+  font-weight:bold;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 160px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+/*estilos para el artcle laboral*/
+#laboral {
+	color: #ffffff;
+	display: inline-block;
+	background: #2D9A8B;
+	width: 100%;
+}
+.feclaboro {
+	color: #ffffff;
+	float: right;
+	padding-left: 7em;
+}
+.contenidolaboro {
+	color: #ffffff;
+	width: 50%;
+	float: right;
+}
+/*estilos para el artcle educacion*/
+#educacion {
+	background: #FFFFD8;
+	color: black;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+.fecestudio {
+	float: right;
+}
+.contenidoestudio {
+	width: 50%;
+	float: right;
+}
+/*estlos para contacto*/
+#contacto {
+     background: #272822; 
+     color: #FFFFFF;          
+    display: inline-block;
+	width: 100%;
+    height: auto;
+}
+#contactogeneral {
+
+	float: left;
+	position: relative;
+
+}
+.dotoscont {
+	padding: 0.5em 0  0.5em 1em;
+}
+#formulariocontacto {
+	float: right;
+	position: relative;
+	width: 60%;
+}
+#formulario {
+	display: block;
+}
+input, textarea{
+	display: block;
+	background: #272822;
+	padding: 1em;
+	margin: 0.5em;
+	width: 80%;
+}
+.button {
+   border-top: 1px solid #80a4ba;
+   background: #1b9696;
+   background: -webkit-gradient(linear, left top, left bottom, from(#065e5e), to(#1b9696));
+   background: -webkit-linear-gradient(top, #065e5e, #1b9696);
+   background: -moz-linear-gradient(top, #065e5e, #1b9696);
+   background: -ms-linear-gradient(top, #065e5e, #1b9696);
+   background: -o-linear-gradient(top, #065e5e, #1b9696);
+   padding: 12.5px 25px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   width: 150px;
+   }
+.button:hover {
+   border-top-color: #21a0a0;
+   background: #21a0a0;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #2b7d7d;
+   background: #2b7d7d;
+}
+
+/*logos sociales*/
+.redesSociales {
+	
+}
+<style type="text/css">
+                                    div.image {
+                                    max-width:            64px;
+                                    max-height:           64px;
+                                    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAADLklEQVR4AczYX2iVdRjA8c+7swzWFNIL7cw2MogYZFIWKINQ8kKYu4kwIrsYw0QSJAd1EUFQ0EXNiBKCLroLg0gKd6cMKioOdBFtpYkFcY40w/5o5MD5BF0c0J33/Z1/G32+nLv34mEXe573zbSq306blOtRq3feaVe0JNO8AXuM2elW+Rac9olPVXVVn0kV10WTXVcxqU9XlEyoijaqmlDSoVGzooNmjWrbkBnRhWYMacOIedGl5o1o0bgF0cUWjGtayZRYhqaUpCk5IZapE0qSpsQyNiVhXCxz4wqMWBDL3IIROYbMixVo3pCGZsQKNaOBUbGCjbpJyaxYwWaV3GBCdNgFb3jKsHvt85afb1jO58SSJtTRl7twF30n0vnQOnVY7X0hnPeSIR81XNZ96iZFTiet9Y1IdFgjY3bIsFU0bFJdReT0BMkRTioy6HvhV7GkCsBAwbG1Baz1tcjpd2X57vK2/e52uuHhNgAcELltAPR6Mee/5AfSjoqGHQCmRW4PUDfsS7GkI4r1eF3kNA39rorc9kFdj6d9Jm7oEUVu8bHI7ap+xkRBpyx1j9fU6k9sU2SdKGysxyZFdtjjZme9oGyjRx3yjkyRfsU29Sorkjluly8sVVV1SsodipVTA4x4yEE1P2nPhk4HyLypE2XFyj2JRzbrzDbFypm/rJZvzv2uaVfmgvWKXO5RbNhB7dtivYQeNcVesUu7dkuppQdYbdp+7ej1TDcGoORdZz1rldY8aVBKrVdNymX3+cdFrck8T3f+Amvsd1Gr9hqWVmNMJPvbdq0ZdElIN5ZYx/X+tE3zen0u6iXWMdNCumvec6fmvCqaajrnJMtt0RlHZIo9J5rsQM5Rmts5j0t5WeSWc5RSEcnmHbaK5O6MpqtALzhuq6X+MCfzgzmzZv0iFHvQMQ9r3vH0q1nFXiXNuN0xi6KFqvqaezk975Db5Mtsd9RvosUmgAxQ8q1heS456awf//tdAawxYNBuj9modXM2W2zvA0XNV864Ijpq9H/4iebf4uxAAAAAAADI/7UMG3yk+kz3oDJQ7cfqz/U/LH7Z/LT6bffj8tftz+ve9wB2JuAtazXwaQAAAABJRU5ErkJggg==');
+                                    }
+
+
+/*media query*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* STYLES GO HERE */
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/unsplash_525f012329589_1.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+h1{
+	color: white;
+	opacity: 1.0;
+	border: solid 1px;
+	position: relative;
+	width: 70%;
+	margin-top: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	background: aqua;
+	text-align: center;
+	padding: 1em 1em 1em 1em;
+	opacity: 0.5;
+	text-shadow: 2px 4px 3px #999999;
+	-moz-box-shadow: 0px 0px 26px #999999;
+    -webkit-box-shadow: 0px 0px 26px #999999;
+    box-shadow: 0px 0px 26px #999999;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+	}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/unsplash_525f012329589_1.JPG) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+h1 {
+	font-size: 35px;
+	padding: 1em 0.7em 1em 0.3em;
+}
+.contenidos {
+	width: 100%;
+	float: left;
+	text-align: left;
+	padding: 0.1em 0.1em 0.1em 0.1em;
+}
+.contenidolaboro {
+	width: 100%;
+}
+.contenidoestudio {
+	width: 100%;
+}
+/*contato*/
+#contactogeneral {
+	width: 100%;
+}
+
+#formulariocontacto {
+	width: 100%;
+}
+h2 {
+	padding-left: 0.1em;
+}
+h3 {
+	padding-left: 0.1em;
+}
+.fechas {
+	padding-left: 0.1em;
+}
+.soc {
+    margin:0; padding:1em;
+    list-style:none;
+    display: inline;
+}
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+header {
+	overflow:hidden;
+	position: relative;
+	background:url(../images/unsplash_525f012329589_1.JPG) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+h1 {
+	font-size: 35px;
+	padding: 1em 0.7em 1em 0.3em;
+}
+.contenidos {
+	width: 100%;
+	float: left;
+	text-align: left;
+	padding: 0.1em 0.1em 0.1em 0.1em;
+}
+.contenidolaboro {
+	width: 100%;
+}
+.contenidoestudio {
+	width: 100%;
+}
+/*contato*/
+#contactogeneral {
+	width: 100%;
+}
+
+#formulariocontacto {
+	width: 100%;
+}
+h2 {
+	padding-left: 0.1em;
+}
+h3 {
+	padding-left: 0.1em;
+}
+.fechas {
+	padding-left: 0.1em;
+}
+.soc {
+    margin:0; padding:1em;
+    list-style:none;
+    display: inline;
+}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/Top_view.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+
+h1 {
+	font-size: 65px;
+}
+h2 {
+	padding-left: 4.7em;
+}
+h3 {
+	padding-left: 4.7em;
+}
+.fechas {
+	padding-left: 4.7em;
+}
+.contenidos {
+	width: 70%;
+	float: left;
+	padding-left: 7em;
+}
+.feclaboro {
+	color: #ffffff;
+	float: right;
+	padding-left: 7em;
+}
+.contenidolaboro {
+	color: #ffffff;
+	width: 50%;
+	float: right;
+}
+.contenidoestudio {
+	width: 50%;
+	float: right;
+}
+/*contato*/
+#contactogeneral {
+	width: 30%;
+	padding-left: 7em;
+}
+
+#formulariocontacto {
+	width: 60%;
+}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+
+h1{
+	font-size: 70px;
+}
+h2 {
+	padding-left: 4.7em;
+}
+h3 {
+	padding-left: 4.7em;
+}
+.fechas {
+	padding-left: 4.7em;
+}
+.contenidos {
+	width: 70%;
+	float: left;
+	padding-left: 7em;
+}
+.contenidolaboro {
+	color: #ffffff;
+	width: 50%;
+	float: right;
+}
+.contenidoestudio {
+	width: 50%;
+	float: right;
+}
+/*contato*/
+#contactogeneral {
+	width: 30%;
+	padding-left: 7em;
+}
+
+#formulariocontacto {
+	width: 60%;
+}	
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+
+h1{
+	font-size: 70px;
+}
+h2 {
+	padding-left: 4.7em;
+}
+h3 {
+	padding-left: 4.7em;
+}
+.fechas {
+	padding-left: 4.7em;
+}
+.contenidos {
+	width: 70%;
+	float: left;
+	padding-left: 7em;
+}
+.contenidolaboro {
+	color: #ffffff;
+	width: 50%;
+	float: right;
+}
+.contenidoestudio {
+	width: 50%;
+	float: right;
+}
+/*contato*/
+#contactogeneral {
+	width: 30%;
+	padding-left: 7em;
+}
+
+#formulariocontacto {
+	width: 60%;
+}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/Top_view.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+h1{
+	font-size: 70px;
+}
+h2 {
+	padding-left: 4.7em;
+}
+h3 {
+	padding-left: 4.7em;
+}
+#circular {
+	padding-left: 15em;
+}
+.fechas {
+	padding-left: 4.7em;
+}
+.contenidos {
+	width: 70%;
+	float: left;
+	padding-left: 7em;
+}
+.contenidolaboro {
+	color: #ffffff;
+	width: 50%;
+	float: right;
+}
+.contenidoestudio {
+	width: 50%;
+	float: right;
+}
+/*contato*/
+#contactogeneral {
+	width: 30%;
+	padding-left: 7em;
+}
+
+#formulariocontacto {
+	width: 60%;
+}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/Top_view.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+
+h1{
+	font-size: 70px;
+}
+h2 {
+	padding-left: 4.7em;
+}
+h3 {
+	padding-left: 4.7em;
+}
+#circular {
+	padding-left: 15em;
+}
+.fechas {
+	padding-left: 4.7em;
+}
+.contenidos {
+	width: 70%;
+	float: left;
+	padding-left: 7em;
+}
+.contenidolaboro {
+	color: #ffffff;
+	width: 50%;
+	float: right;
+}
+.contenidoestudio {
+	width: 50%;
+	float: right;
+}
+/*contato*/
+#contactogeneral {
+	width: 30%;
+	padding-left: 7em;
+}
+#formulariocontacto {
+	width: 60%;
+}
+}
+ 
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+h1{
+	font-size: 50px;
+	padding: 1em 0.7em 1em 0.3em;
+}
+.contenidos {
+	width: 100%;
+	float: left;
+	text-align: left;
+	padding: 0.1em 0.1em 0.1em 0.1em;
+}
+.contenidolaboro {
+	width: 100%;
+}
+.contenidoestudio {
+	width: 100%;
+}
+/*contato*/
+#contactogeneral {
+	width: 100%;
+}
+
+#formulariocontacto {
+	width: 100%;
+}
+h2 {
+	padding-left: 0.1em;
+}
+h3 {
+	padding-left: 0.1em;
+}
+.fechas {
+	padding-left: 0.1em;
+}
+.soc {
+    margin:0; padding:1em;
+    list-style:none;
+    display: inline;
+}
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+h1{
+	font-size: 50px;
+	padding: 1em 0.7em 1em 0.3em;
+}
+.contenidos {
+	width: 100%;
+	float: left;
+	text-align: left;
+	padding: 0.1em 0.1em 0.1em 0.1em;
+}
+.contenidolaboro {
+	width: 100%;
+}
+.contenidoestudio {
+	width: 100%;
+}
+/*contato*/
+#contactogeneral {
+	width: 100%;
+}
+
+#formulariocontacto {
+	width: 100%;
+}
+h2 {
+	padding-left: 0.1em;
+}
+h3 {
+	padding-left: 0.1em;
+}
+.fechas {
+	padding-left: 0.1em;
+}
+.soc {
+    margin:0; padding:1em;
+    list-style:none;
+    display: inline;
+}
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+header {
+	overflow: hidden;
+	position: relative;
+	background:url(../images/) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+    -webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+    box-shadow:inset 0px 0px 26px #0c0c0d;
+
+}
+h1{
+	font-size: 50px;
+	padding: 1em 0.7em 1em 0.3em;
+}
+.contenidos {
+	width: 100%;
+	float: left;
+	text-align: left;
+	padding: 0.1em 0.1em 0.1em 0.1em;
+}
+.contenidolaboro {
+	width: 100%;
+}
+.contenidoestudio {
+	width: 100%;
+}
+/*contato*/
+#contactogeneral {
+	width: 100%;
+}
+
+#formulariocontacto {
+	width: 100%;
+}
+h2 {
+	padding-left: 0.1em;
+}
+h3 {
+	padding-left: 0.1em;
+}
+.fechas {
+	padding-left: 0.1em;
+}
+.soc {
+    margin:0; padding:1em;
+    list-style:none;
+    display: inline;
+}
+}

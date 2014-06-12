@@ -1,0 +1,379 @@
+@font-face {
+    font-family:si;
+    src:    url(../fuentes/socicon.eot?#iefix) 
+                format(embedded-opentype),
+            url(../fuentes/socicon.woff) format(woff),
+            url(../fuentes/socicon.ttf) format(truetype),
+            url(../fuentes/socicon.svg) format(svg);
+    font-weight:400;
+    font-style:normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../fuentes/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 44px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: none;
+}
+
+
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'a';
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-google:before {
+    content:'c';
+}
+
+.soc-twitter:hover {
+    background-color: #61bbf2;
+}
+.soc-google:hover {
+    background-color: #ed5241;
+}
+
+  
+
+a {
+	font-size: 18px;
+	color: white;
+	text-shadow: 1px 1px 2px #C94A1C;
+	text-decoration: none;
+}
+
+body {
+	/*background: #EEEEEE;
+	background:url(../images/unsplash_525f012329589_1.JPG) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background: #2A333B;
+	font-family: "Open Sans";
+	font-size: 16px;
+}
+
+header {
+	color: white;
+	overflow: hidden;
+	position: relative;
+	background:url(../images/unsplash_525f012329589_1.JPG) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+-webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+box-shadow:inset 0px 0px 26px #0c0c0d;
+}
+h1 {
+    position: relative;
+    display: block;
+	font-size: 86px;
+	float: left;
+	text-shadow: 2px 4px 3px #999999;
+	text-align: center;
+	padding: 2em 0 3em 0;
+	width: 100%;
+}
+h2 {
+	padding: 0.1em;
+	text-align: center;
+	color: gray;
+	opacity:0.5;
+	background: white;
+	border-radius: 0.5em 0.1em 0.1em 0.5em;
+/*border-style: solid;
+border-width: 50px 50px 0 0;
+border-color: #94989C transparent transparent transparent;
+line-height: 0px;
+_border-color: #094989 #000000 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');*/
+}
+h3 {
+	text-align: center;
+}
+nav {
+	background: gray;
+	display: inline-block;
+	/*position: fixed;*/
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+} 
+
+nav ul{
+	float: right;
+	margin: 0.5em 1em 0.5em 0.5em;
+	position: relative;
+	display: block;
+}
+
+/*nav  li {
+	list-style: none;
+		float: right;
+		position: relative;
+}*/
+nav ul li {
+
+	position: relative;
+	padding: 0.5em;
+	margin-right: 0.2em;
+	border-bottom: solid 5px orange;
+	display: inline-block;
+	list-style: none;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+ul li:hover{
+	/*padding: 10px 0 10px 0;*/
+	-webkit-box-shadow: 3px 2px 3px 2px #343452;
+    box-shadow: 3px 2px 3px 2px #343452;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+	
+
+section {
+	/*border:2px solid;*/
+	position: relative;
+	overflow: hidden;
+}
+article {	
+	display: inline-block;
+	float: left;
+	position: relative;
+	/*border: 2px solid;*/
+	/*width: 31%;
+	margin: 0.5em;
+	padding: 0.5em;*/
+
+}
+p {
+	color: #070A12;
+}
+
+figure {
+	height: auto;
+    display: inline-block;
+    margin-top: 1em;
+    float: right;
+}
+figure img {
+	float: right;
+	border: 1px solid grey;
+    margin: 0;
+    padding: 0;
+    border-radius: 900px;
+    overflow: hidden;
+
+}
+img {
+	   padding-right: 1.5em;
+
+}
+footer {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	opacity:0.5;
+	background: white;
+	margin-top: 2em;
+
+}
+span {
+	color: gray;
+	display: block;
+	text-align: center;
+	margin-top: 3em;
+
+}
+
+/*estilos Para CV*/
+body {
+	background:url(../images/chips-20072_640.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*
+}
+.datosPersonales {
+	/*background:url(../images/chips-20072_640.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background: #ECECEC;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+-webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+box-shadow:inset 0px 0px 26px #0c0c0d;
+	width: 100%;
+	height: 700px;
+}
+.datos {
+	display: inline-block;
+	margin-left: 2em;
+
+}
+#educacion {
+	background:url(../images/book-168824_640.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+-webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+box-shadow:inset 0px 0px 26px #0c0c0d;
+	width: 100%;
+	height: 700px;
+}
+#experiencia {
+	background:url(../images/8864977481_713b7cbda5_m.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+-webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+box-shadow:inset 0px 0px 26px #0c0c0d;
+	width: 100%;
+	height: 700px;
+}
+#conocimientos {
+	background:url(../images/10347464594_cbb806f238_m.jpg) no-repeat center center fixed ;
+	webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-shadow:inset 0px 0px 26px #0c0c0d;
+-webkit-box-shadow:inset 0px 0px 26px #0c0c0d;
+box-shadow:inset 0px 0px 26px #0c0c0d;
+	width: 100%;
+	height: 700px;
+}
+/* #Media Queries
+================================================== */
+
+	/*Smaller than standard 960 (devices and browsers)*/
+	@media only screen and (min-width: 960px) and (max-width: 1600px) {
+		article {
+			width: 29%;
+		}
+		article {
+			width: 70%;
+		}
+		h1 {
+			padding: 2em 0 6em 0;
+		}
+		h3 {
+			font-size: 40px;
+		}
+
+
+
+	} 
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		article {
+			width: 29%;
+		}
+		h1 {
+			padding: 1em 0 6em 0;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		body {
+			background: #2A333B;
+		}
+
+    }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		body {
+			background: #2A333B;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		body {
+			background: #2A333B;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		figure img {
+			display: none;
+		}
+		p {
+			color: rgb(10, 10, 10);
+			letter-spacing: 0.1em;
+		}
+
+	}
