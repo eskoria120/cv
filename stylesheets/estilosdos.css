@@ -184,6 +184,8 @@ h1{
     box-shadow: 0px 0px 26px #999999;
     display: block;
     font-family: 'Roboto', sans-serif;
+	-webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
 	}
 header h1:hover {
 	opacity: 1.1;
@@ -192,6 +194,7 @@ header h1:hover {
 	transition:all 0.5s ease-in;
 	-webkit-transition:all 0.5s ease-in; -moz-transition:all 0.5s ease-in;
 	-ms-transition:all 0.5s ease-in; -o-transition:all 0.5s ease-in;
+
 }
 /*efecto de arrow*/
 .arrow_box {
@@ -247,10 +250,11 @@ ul li {
 	opacity: 0.8;
 	color: #ffffff;
 	overflow: hidden;
-	height: auto;
+	height: 700px;
 	position: relative;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
+	box-shadow: inset 0px 0px 26px #0c0c0d;
 }
 figure img {
 	float: right;
@@ -313,11 +317,12 @@ span {
 	display: inline-block;
 	background: #2D9A8B;
 	width: 100%;
+	box-shadow: inset 0px 0px 26px #0c0c0d;
 }
 .feclaboro {
 	color: #ffffff;
 	float: right;
-	padding-left: 7em;
+	padding-left: 7.5em;
 }
 .contenidolaboro {
 	color: #ffffff;
@@ -346,6 +351,7 @@ span {
     display: inline-block;
 	width: 100%;
     height: auto;
+	box-shadow: inset 0px 0px 26px #0c0c0d;
 }
 #contactogeneral {
 
@@ -370,6 +376,8 @@ input, textarea{
 	padding: 1em;
 	margin: 0.5em;
 	width: 80%;
+	-webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 .button {
    border-top: 1px solid #80a4ba;
@@ -404,17 +412,7 @@ input, textarea{
    background: #2b7d7d;
 }
 
-/*logos sociales*/
-.redesSociales {
-	
-}
-<style type="text/css">
-                                    div.image {
-                                    max-width:            64px;
-                                    max-height:           64px;
-                                    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAADLklEQVR4AczYX2iVdRjA8c+7swzWFNIL7cw2MogYZFIWKINQ8kKYu4kwIrsYw0QSJAd1EUFQ0EXNiBKCLroLg0gKd6cMKioOdBFtpYkFcY40w/5o5MD5BF0c0J33/Z1/G32+nLv34mEXe573zbSq306blOtRq3feaVe0JNO8AXuM2elW+Rac9olPVXVVn0kV10WTXVcxqU9XlEyoijaqmlDSoVGzooNmjWrbkBnRhWYMacOIedGl5o1o0bgF0cUWjGtayZRYhqaUpCk5IZapE0qSpsQyNiVhXCxz4wqMWBDL3IIROYbMixVo3pCGZsQKNaOBUbGCjbpJyaxYwWaV3GBCdNgFb3jKsHvt85afb1jO58SSJtTRl7twF30n0vnQOnVY7X0hnPeSIR81XNZ96iZFTiet9Y1IdFgjY3bIsFU0bFJdReT0BMkRTioy6HvhV7GkCsBAwbG1Baz1tcjpd2X57vK2/e52uuHhNgAcELltAPR6Mee/5AfSjoqGHQCmRW4PUDfsS7GkI4r1eF3kNA39rorc9kFdj6d9Jm7oEUVu8bHI7ap+xkRBpyx1j9fU6k9sU2SdKGysxyZFdtjjZme9oGyjRx3yjkyRfsU29Sorkjluly8sVVV1SsodipVTA4x4yEE1P2nPhk4HyLypE2XFyj2JRzbrzDbFypm/rJZvzv2uaVfmgvWKXO5RbNhB7dtivYQeNcVesUu7dkuppQdYbdp+7ej1TDcGoORdZz1rldY8aVBKrVdNymX3+cdFrck8T3f+Amvsd1Gr9hqWVmNMJPvbdq0ZdElIN5ZYx/X+tE3zen0u6iXWMdNCumvec6fmvCqaajrnJMtt0RlHZIo9J5rsQM5Rmts5j0t5WeSWc5RSEcnmHbaK5O6MpqtALzhuq6X+MCfzgzmzZv0iFHvQMQ9r3vH0q1nFXiXNuN0xi6KFqvqaezk975Db5Mtsd9RvosUmgAxQ8q1heS456awf//tdAawxYNBuj9modXM2W2zvA0XNV864Ijpq9H/4iebf4uxAAAAAAADI/7UMG3yk+kz3oDJQ7cfqz/U/LH7Z/LT6bffj8tftz+ve9wB2JuAtazXwaQAAAABJRU5ErkJggg==');
-                                    }
-
+/*menu lateral*/
 
 /*media query*/
 
@@ -443,7 +441,7 @@ h1{
 	border: solid 1px;
 	position: relative;
 	width: 70%;
-	margin-top: 140px;
+	margin-top: 120px;
 	margin-left: auto;
 	margin-right: auto;
 	background: aqua;
@@ -466,7 +464,7 @@ and (min-width : 321px) {
 header {
 	overflow: hidden;
 	position: relative;
-	background:url(../images/unsplash_525f012329589_1.JPG) no-repeat center center fixed ;
+	background:url(../images/unsplash_525f012329589_1.jpg) no-repeat center center fixed ;
 	webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -503,6 +501,7 @@ h1 {
 }
 h2 {
 	padding-left: 0.1em;
+	margin-top: 5em;
 }
 h3 {
 	padding-left: 0.1em;
@@ -511,7 +510,7 @@ h3 {
 	padding-left: 0.1em;
 }
 .soc {
-    margin:0; padding:1em;
+    margin:0; padding:0.4em;
     list-style:none;
     display: inline;
 }
@@ -569,7 +568,7 @@ h3 {
 	padding-left: 0.1em;
 }
 .soc {
-    margin:0; padding:1em;
+    margin:0; padding:0.4em;
     list-style:none;
     display: inline;
 }
@@ -648,7 +647,7 @@ and (orientation : landscape) {
 header {
 	overflow: hidden;
 	position: relative;
-	background:url(../images/) no-repeat center center fixed ;
+	background:url(../images/unsplash_525f012329589_1.jpg) no-repeat center center fixed ;
 	webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -707,7 +706,7 @@ and (orientation : portrait) {
 header {
 	overflow: hidden;
 	position: relative;
-	background:url(../images/) no-repeat center center fixed ;
+	background:url(../images/unsplash_525f012329589_1.jpg) no-repeat center center fixed ;
 	webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -778,21 +777,26 @@ h1{
 	font-size: 70px;
 }
 h2 {
-	padding-left: 4.7em;
+	padding-left: 5em;
 }
 h3 {
-	padding-left: 4.7em;
+	padding-left: 5em;
 }
 #circular {
 	padding-left: 15em;
 }
 .fechas {
-	padding-left: 4.7em;
+	padding-left: 5.7em;
 }
 .contenidos {
 	width: 70%;
 	float: left;
 	padding-left: 7em;
+}
+#conocimientos {
+
+	height: 700px;
+
 }
 .contenidolaboro {
 	color: #ffffff;
@@ -853,6 +857,11 @@ h3 {
 	float: left;
 	padding-left: 7em;
 }
+#conocimientos {
+
+	height: 700px;
+
+}
 .contenidolaboro {
 	color: #ffffff;
 	width: 50%;
@@ -880,7 +889,7 @@ and (max-device-width : 568px) {
 header {
 	overflow: hidden;
 	position: relative;
-	background:url(../images/) no-repeat center center fixed ;
+	background:url(../images/unsplash_525f012329589_1.jpg) no-repeat center center fixed ;
 	webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -985,7 +994,7 @@ h3 {
 	padding-left: 0.1em;
 }
 .soc {
-    margin:0; padding:1em;
+    margin:0; padding:0.4em;
     list-style:none;
     display: inline;
 }
@@ -1000,7 +1009,7 @@ and (orientation : portrait) {
 header {
 	overflow: hidden;
 	position: relative;
-	background:url(../images/) no-repeat center center fixed ;
+	background:url(../images/unsplash_525f012329589_1.jpg) no-repeat center center fixed ;
 	webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1045,7 +1054,7 @@ h3 {
 	padding-left: 0.1em;
 }
 .soc {
-    margin:0; padding:1em;
+    margin:0; padding:0.4em;
     list-style:none;
     display: inline;
 }

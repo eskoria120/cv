@@ -18,7 +18,7 @@
   </head>
 <body>
   <header>
-    <h1 class="arrow_box"><strong>Jorge Sanvicente Lugo</strong></h1>
+    <h1 class="arrow_box" data-anijs="if: load, on: window, do: bounceIn animated"><strong>Jorge Sanvicente Lugo</strong></h1>
   </header>
     <!--<nav>
       <ul>
@@ -28,10 +28,11 @@
         <li><a href="#">inicio</a></li>
       </ul>
     </nav>-->
+
   <section>
-    <article id="acerca">
+    <article id="acerca" ><!--data-anijs="if: scroll, on: window, do: swing animated"-->
       <h2>Acerca de Mi.</h2>
-      <p class="contenidos">Hola mi nombre es Jorge Sanvicente Lugo, soy un apasionado de la web, la lectura y la musica me interesa el aprendizaje continuo y la evolucionque ha tenido la web estos ultomos años con el salto hacia HTML5.
+      <p class="contenidos">Hola mi nombre es Jorge Sanvicente Lugo, soy un apasionado de la web, la lectura y la musica me interesa el aprendizaje continuo y la evolucion que ha tenido la web estos ultomos años con el salto hacia HTML5.</br></br></br></br>mi objetivo es inovar en desarrollo las ideas y conceptos para lograr un producto de calidad.</br>nvireonvreonvernvreunvrenvkjrenvoireinv
       </p>
         <figure>
           <img src="images/kurdt.jpg">
@@ -40,7 +41,7 @@
 
     <article id="conocimientos">
       <h2>Conociminetos.</h2>
-      <div id="circular">
+      <div id="circular" data-anijs="if: click, do: flipInY animated">
         <div class="soporte_tecnico chart" data-percent="100">
           <span class="percent"></span>
           <p>Soporte Tecnico</p>
@@ -124,18 +125,18 @@ Configuración de dispositivos móviles (iphone, ipad y andrid) para conectarse 
   </div>
   
   <div id="formulariocontacto">  
-    <form action="" method="post" id="formulario">
+    <form action="formContacto.php" method="post" id="formulario">
       nombre:
-    <input name="nombre" type="text">
+    <input name="nombre" type="text" >
      correo:
     <input name="correo" type="text">
      mensaje:
     <textarea name="mensaje" cols="4" rows="4"></textarea></br>
-    <input class="button" name="enviar" type="submit" value="Enviar">
+    <input class="button" name="enviar" type="submit" value="Enviar" data-anijs="if: click, do: lightSpeedOut animated">
     </form> 
   </div> 
   <ul class="soc">
-    <li><a class="soc-twitter" href="#"></a></li>
+    <li><a class="soc-twitter" href="https://twitter.com/eskoria120"></a></li>
     <li><a class="soc-google soc-icon-last" href="#"></a></li>
 </ul>
 
@@ -145,13 +146,14 @@ Configuración de dispositivos móviles (iphone, ipad y andrid) para conectarse 
 
 
 <script src="js/easypiechart.min.js"></script>
-<script src="js/scrollReveal.min.js"></script>
+<script src="js/anijs-min.js"></script>
 <script>
-     window.onscroll = scroll;
-     
+     /* window.onscroll = scroll;
+
     function scroll()
     
-   /* window.onload = function()*/ {
+   window.onload  = function(){
+     console.log("ya se cargo el evento onload");
 <!--  selecciono la clase javascript -->
     var javascript = document.querySelector('.soporte_tecnico');
     new EasyPieChart(javascript, {
@@ -200,7 +202,7 @@ Configuración de dispositivos móviles (iphone, ipad y andrid) para conectarse 
             this.el.children[0].innerHTML = Math.round(percent);
         }
     })
-}
+}*/ 
 </script>
 
 </body>

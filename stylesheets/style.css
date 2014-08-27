@@ -1,41 +1,340 @@
-@font-face {
-	font-family: 'kurdt';
-	src: url('fonts/kurdt.eot');
-}
-@font-face {
-	font-family: 'kurdt';
-	src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'),
-		 url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
-	font-weight: normal;
-	font-style: normal;
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'kurdt';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.icon-telefono:before {
-	content: "\e600";
+body {
+  font-size: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #3e3947;
+  background-color: white;
 }
-.icon-correo:before {
-	content: "\e601";
+
+body, html {
+  height: 100%;
 }
-.icon-web:before {
-	content: "\e602";
+
+a {
+  color: #3e3947;
+  text-decoration: none;
 }
-.icon-googleplus:before {
-	content: "\e603";
+
+img {
+  max-width: 100%;
 }
-.icon-twitter:before {
-	content: "\e604";
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-section {
+  min-height: 100%;
+  position: relative;
+  padding: 2em 0;
+}
+.cd-section:nth-of-type(odd) {
+  background-color: #3e3947;
+}
+.cd-section:nth-of-type(odd) p {
+  color: #898099;
+}
+.cd-section:nth-of-type(even) {
+  background-color: #745360;
+}
+.cd-section:nth-of-type(even) p {
+  color: #bda3ad;
+}
+.cd-section h1, .cd-section p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 768px;
+  text-align: center;
+}
+.cd-section h1 {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.cd-section p {
+  line-height: 1.6;
+}
+@media only screen and (min-width: 768px) {
+  .cd-section h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .cd-section p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+  }
+}
+
+.cd-scroll-down {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  width: 38px;
+  height: 44px;
+  background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
+}
+
+/* No Touch devices */
+.cd-nav-trigger {
+  display: none;
+}
+
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.no-touch #cd-vertical-nav li {
+  text-align: right;
+}
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.no-touch #cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+}
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #d88683;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .4em .5em;
+  color: white;
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+/* Touch devices */
+.touch .cd-nav-trigger {
+  display: block;
+  z-index: 2;
+  position: fixed;
+  bottom: 30px;
+  right: 5%;
+  height: 44px;
+  width: 44px;
+  border-radius: 0.25em;
+  background: rgba(255, 255, 255, 0.9);
+}
+.touch .cd-nav-trigger span {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: #3e3947;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: inherit;
+  border-radius: inherit;
+}
+.touch .cd-nav-trigger span::before {
+  top: -9px;
+}
+.touch .cd-nav-trigger span::after {
+  bottom: -9px;
+}
+
+.touch #cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  right: 5%;
+  bottom: 30px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  border-radius: 0.25em;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.touch #cd-vertical-nav a {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid rgba(62, 57, 71, 0.1);
+}
+.touch #cd-vertical-nav a span:first-child {
+  display: none;
+}
+.touch #cd-vertical-nav a.is-selected span:last-child {
+  color: #d88683;
+}
+.touch #cd-vertical-nav.open {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger {
+  background-color: transparent;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span {
+  background-color: rgba(62, 57, 71, 0);
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+  background-color: #3e3947;
+  height: 3px;
+  width: 20px;
+  border-radius: 0;
+  left: -8px;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 1px;
+}
+.touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  bottom: 0;
+}
+.touch #cd-vertical-nav li:last-child a {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .touch .cd-nav-trigger, .touch #cd-vertical-nav {
+    bottom: 40px;
+  }
 }
